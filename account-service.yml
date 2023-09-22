@@ -33,22 +33,5 @@ management:
     web:
       exposure:
         include: refresh
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health
-management:
-  endpoint:
-    health:
-      group:
-        custom:
-          show-components: always
-management:
-  endpoint:
-    health:
-      group:
-        custom:
-          show-details: always
 customProperty:
   test: ThorRagnarok
