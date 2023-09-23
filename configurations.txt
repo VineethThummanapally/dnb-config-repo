@@ -1,1 +1,3 @@
+netstat -ano | findstr : port number
 
+taskkill /PID typeyourPIDhere /F
