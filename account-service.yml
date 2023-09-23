@@ -32,3 +32,5 @@ management:
         include: refresh,health
 customProperty:
   test: Thor
+api:
+  customer: https://localhost:9001/api/customer
