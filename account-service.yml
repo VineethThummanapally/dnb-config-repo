@@ -34,6 +34,6 @@ management:
       exposure:
         include: refresh,health,info
     health:
-      show-details: "ALWAYS"
+      show-details: ALWAYS
 customProperty:
   test: ThorRagnarok
