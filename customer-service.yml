@@ -20,7 +20,7 @@ spring:
   application:
       name: customer-service
 server:
-   port: 9001
+   port: 0
    error:
     include-message: always
 eureka:
