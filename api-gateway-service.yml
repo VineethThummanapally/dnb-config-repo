@@ -5,22 +5,21 @@ spring:
     gateway:
       routes:
         - id: ACCOUNT-SERVICE
-          uri: lb://ACCOUNT-SERVICE
+          uri: lb://ACCOUNT-SERViCE
           predicates:
-            - Path=/api/account/**
+            - Path= /api/account/**
         - id: CUSTOMER-SERVICE
-          uri: lb://CUSTOMER-SERVICE
+          uri: lb://CUSTOMER-SERViCE
           predicates:
-            - Path=/api/customer/**
+            - Path= /api/customer/**
 server:
   port: 9191
-eureka:
-  instance:
-    client:
-      serviceUrl:
-        defaultZone: http://localhost:8761/eureka/
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
